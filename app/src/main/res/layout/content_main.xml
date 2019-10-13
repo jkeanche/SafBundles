@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/errorTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textColor="@color/hsdk_highlight_red"
+        android:textSize="20sp" />
+    
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/data_plans">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/bundlesRadioGroup"
+             >
+            
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radio500Mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:text="@string/choice_500"
+        
+        android:gravity="left"
+        
+        android:textSize="20sp"
+        
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radio150Mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:text="@string/choice_150"
+        android:gravity="left"
+        
+        android:textSize="20sp"
+        
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radio50Mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:text="@string/choice_50"
+        android:gravity="left"
+        
+        android:textSize="20sp"
+        android:textColor="#fff"
+        
+         />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radio15Mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:text="@string/choice_10"
+        android:textColor="#fff"
+        android:gravity="left"
+        
+        android:textSize="20sp"
+        />
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radio7Mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:text="@string/choice_7"
+        android:textColor="#fff"
+        android:gravity="left"
+        
+        android:textSize="20sp"
+        />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/data_renew">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/renewRadioGroup"
+
+          >
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioOnce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="left"
+            
+            android:textSize="20sp"
+            
+            android:text="@string/buy_once"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            />
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioAutoRenew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_margin="2dp"
+            android:gravity="left"
+            
+            android:textSize="20sp"
+            android:textColor="#fff"
+            
+            android:text="@string/autorenew"
+            />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/payment_option">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/paymentRadioGroup"
+
+             >
+
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioAirtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:text="@string/airtime"
+        android:textColor="#fff"
+        android:gravity="left"
+        android:textSize="20sp"
+        />
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioMpesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:gravity="left"
+        android:background="@color/colorAccent"
+        android:textSize="20sp"
+        android:text="@string/mpesa"
+        android:textColor="#fff" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:text="@string/next"
+        android:textSize="20sp"
+       android:background="@color/colorPrimaryDark"
+        android:textColor="#fff" />
+
+</LinearLayout>

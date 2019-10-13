@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Saf Bundles</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_daily_bundles">DailyBundlesActivity</string>
+
+    <string name="choice_500">500 MB (500SMS + WhatsApp)</string>
+    <string name="choice_150">150 MB (150SMS + WhatsApp)</string>
+    <string name="choice_50">50 MB (50SMS + WhatsApp)</string>
+    <string name="choice_10">15 MB (15 SMS)</string>
+    <string name="choice_7">7 MB (7 SMS)</string>
+
+    <string name="buy_once">Buy Once</string>
+    <string name="autorenew">Autorenew</string>
+
+    <string name="airtime">Airtime</string>
+    <string name="mpesa">Mpesa</string>
+    <string name="title_activity_payment_choice">PaymentChoiceActivity</string>
+
+    <string name="buy">Buy Selected Bundles</string>
+
+    <string name="next">Next</string>
+    <string name="home">Home</string>
+
+
+</resources>
